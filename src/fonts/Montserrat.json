@@ -1,0 +1,41 @@
+{
+  "family": "Montserrat",
+  "fonts": [
+    {
+      "src":
+        "https://cdn.jsdelivr.net/npm/@typopro/web-montserrat@3.7.5/TypoPRO-Montserrat-Regular.ttf"
+    },
+    {
+      "src":
+        "https://cdn.jsdelivr.net/npm/@typopro/web-montserrat@3.7.5/TypoPRO-Montserrat-Bold.ttf",
+      "fontWeight": "bold"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/npm/@typopro/web-montserrat@3.7.5/TypoPRO-Montserrat-ExtraBold.ttf",
+      "fontWeight": "extraBold"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/npm/@typopro/web-montserrat@3.7.5/TypoPRO-Montserrat-Light.ttf",
+      "fontWeight": "light"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/npm/@typopro/web-montserrat@3.7.5/TypoPRO-Montserrat-LightItalic.ttf",
+      "fontWeight": "light",
+      "fontStyle": "italic" 
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/npm/@typopro/web-montserrat@3.7.5/TypoPRO-Montserrat-Italic.ttf",
+      "fontStyle": "italic" 
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/npm/@typopro/web-montserrat@3.7.5/TypoPRO-Montserrat-BoldItalic.ttf",
+      "fontWeight": "bold",
+      "fontStyle": "italic"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/npm/@typopro/web-montserrat@3.7.5/TypoPRO-Montserrat-ExtraBoldItalic.ttf",
+      "fontWeight": "bolder",
+      "fontStyle": "italic"
+    }
+  ]
+}
