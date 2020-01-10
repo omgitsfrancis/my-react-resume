@@ -17,14 +17,12 @@ import { headerData, summary } from "./data/basic";
 import { experienceData } from "./data/experience";
 import { educationData } from "./data/education";
 
+// Resume theme
+import { theme } from "./data/theme";
+
 // Fonts
 import Montserrat from "./fonts/Montserrat.json";
 Font.register(Montserrat);
-
-const theme = {
-  text: "#414141",
-  accent: "#446bb2"
-};
 
 const StyledPage = styled.Page`
   display: "flex";
