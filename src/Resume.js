@@ -9,19 +9,22 @@ import SectionTitle from "./components/SectionTitle";
 import {
   ExperienceSection,
   EducationSection,
-  SummarySection
+  SummarySection,
+  SkillsSection
 } from "./components/SectionContent";
 
 // Resume data
 import { headerData, summary } from "./data/basic";
 import { experienceData } from "./data/experience";
 import { educationData } from "./data/education";
+import { skills } from "./data/skills";
 
 // Resume theme
 import { theme } from "./data/theme";
 
 // Fonts
 import Montserrat from "./fonts/Montserrat.json";
+import { SlowBuffer } from "buffer";
 Font.register(Montserrat);
 
 const StyledPage = styled.Page`
@@ -38,8 +41,9 @@ const Body = styled.View`
 
 const Stamp = styled(StyledLink)`
   position: relative;
+  bottom: -20px;
   font-size: 8px;
-  text-align: right;
+  text-align: center;
   margin: 0 10px;
   color: ${props => props.theme.accent};
 `;
@@ -65,6 +69,11 @@ export const Resume = () => (
 
           <SectionTitle title="Projects" />
           <SectionTitle title="Skills" />
+          {
+            skills.map(skill => (
+              <SkillsSection data={skill} />
+            ))
+          }
         </Body>
         <Stamp src="https://github.com/">Resume coded in React</Stamp>
       </StyledPage>
