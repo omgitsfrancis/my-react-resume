@@ -34,7 +34,7 @@
     },
     {
       "src": "https://cdn.jsdelivr.net/npm/@typopro/web-montserrat@3.7.5/TypoPRO-Montserrat-ExtraBoldItalic.ttf",
-      "fontWeight": "bolder",
+      "fontWeight": "extraBold",
       "fontStyle": "italic"
     }
   ]
