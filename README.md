@@ -3,6 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Got bored of updating a word document resume so I wrote it in React. Using [react-pdf](https://react-pdf.org/) made it possible to build a PDF document with React components.
 
 Master branch deployed on Netlify: [https://francis-enriquez-resume.netlify.com/](https://francis-enriquez-resume.netlify.com/)
+(IE not supported by react-pdf)
 
 ## Getting Started
 ```
