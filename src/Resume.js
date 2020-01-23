@@ -24,7 +24,6 @@ import { theme } from "./data/theme";
 
 // Fonts
 import Montserrat from "./fonts/Montserrat.json";
-import { SlowBuffer } from "buffer";
 Font.register(Montserrat);
 
 const StyledPage = styled.Page`
