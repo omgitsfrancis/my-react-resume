@@ -11,6 +11,7 @@
     "babel-loader": "^8.0.6",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "moment": "^2.24.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0"
@@ -20,7 +21,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "export": "npx babel-node .\\export\\index.js"
+    "export": "npx babel-node export/index.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -38,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.8.3",
     "@babel/core": "^7.8.3",
     "@babel/node": "^7.8.3"
   }
