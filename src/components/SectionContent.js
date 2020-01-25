@@ -12,7 +12,6 @@ const MainText = styled.Text`
 `;
 const Location = styled.Text`
   font-size: 10px;
-  font-style: italic;
   color: ${props => props.theme.accent};
 `;
 const SubText = styled.Text`
