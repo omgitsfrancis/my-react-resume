@@ -1,7 +1,7 @@
 export const skills = [
   {
     category: "Programming",
-    categorySkills: ["React", "JavaScript", "C#", "HTML", "CSS", "SQL"]
+    categorySkills: ["React", "JavaScript", "C#", "HTML", "CSS", "Docker", "SQL"]
   },
   {
     category: "Software",

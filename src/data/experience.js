@@ -15,9 +15,10 @@ export const experienceData = [
       }
     ],
     bullets: [
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using ",
-      "EASEFEASFESFesf"
+      "Developed and maintained projects using React, C#, .NET, and SQL Server.",
+      "Worked in an agile environment, specifically Scrum.",
+      "Built automated end to end tests from the ground up with Selenium (C#) and TestCafe.",
+      "Contributed to the company's design system by creating styled React components."
     ]
   },
   {
@@ -31,9 +32,10 @@ export const experienceData = [
       }
     ],
     bullets: [
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using ",
-      "EASEFEASFESFesf"
+      "Delivered monthly security patching scripts for isolated systems at various Marine and Naval sites.",
+      "Automated the creation of security patching scripts with Python.",
+      "Utilized security assessment tools such as Nessus, Security Content Automation Protocol (SCAP), and Security Technical Implementation Guides (STIGs) to perform vulnerability testing.",
+      "Conducted Application Integration and Software Integration Testing (AI SIT) on various government networks (CANES, RDTE, SWAN).",
     ]
   },
   {
@@ -47,9 +49,10 @@ export const experienceData = [
       }
     ],
     bullets: [
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using ",
-      "EASEFEASFESFesf"
+      "Developed automated functional tests on Naval Ship systems (CANES).",
+      "Created tutorial documentation to provide training on the creation and execution of automated test.",
+      "Managed all test assets by creating baseline images, backups, and documentation.",
+      "Wrote daily testing reports to update installation technicians of system discrepancies."
     ]
   },
   {
@@ -68,9 +71,10 @@ export const experienceData = [
       }
     ],
     bullets: [
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using ",
-      "EASEFEASFESFesf"
+      "Support and troubleshoot technological issues of a company with over 500 employees.",
+      "Experience with Enterprise Microsoft technologies such as Active Directory, SCCM, IIS, and Exchange.",
+      "Issued laptops, desktops, VoIP phones, and smart cards to new hires.",
+      "Projects: Classroom in a box, Facility Maintenance Ticket Server, and HTTPS file server for customer downloads."
     ]
   }
 ];

@@ -3,7 +3,7 @@ export const headerData = {
   title: "Software Engineer",
   contacts: [
     "francisdenriquez@gmail.com",
-    "www.francisenriquez.com",
+    "omgitsfrancis.netlify.com",
     "git: omgitsfrancis"
   ]
 }
