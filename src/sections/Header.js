@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@react-pdf/styled-components';
+import { headerData } from '../data/basic'
 
 const Wrapper = styled.View`
   display: flex;
@@ -23,13 +24,7 @@ const Contact =styled.Text`
   font-weight: light;
   text-align: center;
 `
-export default function Header({data}) {
-  const {
-    name,
-    title,
-    contacts
-  } = data
-
+export default function Header({name, title, contacts}) {
   return (
     <Wrapper>
       <Name>{name}</Name>

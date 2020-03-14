@@ -4,20 +4,20 @@ import styled, { ThemeProvider } from "@react-pdf/styled-components";
 
 // Components
 import { StyledLink } from "./components/Common";
-import Header from "./components/Header";
 import SectionTitle from "./components/SectionTitle";
-import {
-  ExperienceSection,
-  EducationSection,
-  SummarySection,
-  SkillsSection
-} from "./components/SectionContent";
 
 // Resume data
 import { headerData, summary } from "./data/basic";
 import { experienceData } from "./data/experience";
 import { educationData } from "./data/education";
-import { skills } from "./data/skills";
+import { skillsData } from "./data/skills";
+
+// Sections
+import Header from "./sections/Header";
+import Summary from "./sections/Summary";
+import Experience from "./sections/Experience";
+import Education from "./sections/Education";
+import Skills from "./sections/Skills";
 
 // Resume theme
 import { theme } from "./data/theme";
@@ -51,28 +51,13 @@ export const Resume = () => (
   <ThemeProvider theme={theme}>
     <Document title="FrancisResume" author="Francis Enriquez">
       <StyledPage size="A4">
-        <Header data={headerData} />
+        <Header name={headerData.name} title={headerData.title} contacts={headerData.contacts} />
         <Body>
-          <SectionTitle title="Summary" />
-          <SummarySection data={summary} />
-
-          <SectionTitle title="Experience" />
-          {experienceData.map(exp => (
-            <ExperienceSection data={exp} />
-          ))}
-
-          <SectionTitle title="Education" />
-          {educationData.map(edu => (
-            <EducationSection data={edu} />
-          ))}
-
-          <SectionTitle title="Projects" />
-          <SectionTitle title="Skills" />
-          {
-            skills.map(skill => (
-              <SkillsSection data={skill} />
-            ))
-          }
+          <Summary summary={summary} />
+          <Experience experienceData={experienceData} />
+          <Education educationData={educationData} />
+          <SectionTitle title="Projects *PLACEHOLDER*" />
+          <Skills skills={skillsData} />
         </Body>
         <Stamp src="https://github.com/">Resume coded in React</Stamp>
       </StyledPage>
