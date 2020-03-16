@@ -4,12 +4,12 @@ import styled, { ThemeProvider } from "@react-pdf/styled-components";
 
 // Components
 import { StyledLink } from "./components/Common";
-import SectionTitle from "./components/SectionTitle";
 
 // Resume data
 import { headerData, summary } from "./data/basic";
 import { experienceData } from "./data/experience";
 import { educationData } from "./data/education";
+import { projectsData } from "./data/projects";
 import { skillsData } from "./data/skills";
 
 // Sections
@@ -17,6 +17,7 @@ import Header from "./sections/Header";
 import Summary from "./sections/Summary";
 import Experience from "./sections/Experience";
 import Education from "./sections/Education";
+import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
 
 // Resume theme
@@ -56,10 +57,10 @@ export const Resume = () => (
           <Summary summary={summary} />
           <Experience experienceData={experienceData} />
           <Education educationData={educationData} />
-          <SectionTitle title="Projects *PLACEHOLDER*" />
+          {/* <Projects projectsData={projectsData} /> */}
           <Skills skills={skillsData} />
         </Body>
-        <Stamp src="https://github.com/">Resume coded in React</Stamp>
+        <Stamp src="https://github.com/omgitsfrancis/my-react-resume">Resume coded in React</Stamp>
       </StyledPage>
     </Document>
   </ThemeProvider>
