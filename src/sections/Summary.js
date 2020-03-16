@@ -10,10 +10,15 @@ const SummaryText = styled.Text`
 `;
 
 export default function Summary({summary}) {
-  return (
-    <>
-      <SectionTitle title="Summary" />
-      <SummaryText>{summary}</SummaryText>
-    </>
-  );
+  if(!summary) {
+    return <></>
+  } else {
+    return (
+      <>
+        <SectionTitle title="Summary" />
+        <SummaryText>{summary}</SummaryText>
+      </>
+    );
+  }
+
 }
