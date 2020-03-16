@@ -16,9 +16,9 @@ export const experienceData = [
     ],
     bullets: [
       "Developed and maintained projects using React, C#, .NET, and SQL Server.",
+      "Contributed to the company's design system by creating styled React components.",
       "Worked in an agile environment, specifically Scrum.",
-      "Built automated end to end tests from the ground up with Selenium (C#) and TestCafe.",
-      "Contributed to the company's design system by creating styled React components."
+      "Built automated end to end tests from the ground up with Selenium (C#) and TestCafe."
     ]
   },
   {
