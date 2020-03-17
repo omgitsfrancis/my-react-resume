@@ -9,7 +9,8 @@ const SummaryText = styled.Text`
 	margin-top: 4px;
 `;
 
-export default function Summary({summary}) {
+export default function Summary(props: {summary: string}) {
+  const { summary } = props; 
   if(!summary) {
     return <></>
   } else {

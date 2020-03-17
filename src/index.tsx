@@ -1,8 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 import { Resume } from "./Resume";
 import { PDFViewer } from "@react-pdf/renderer";
-import './index.css';
+import "./index.css";
 
 function App() {
   return (
@@ -12,5 +12,4 @@ function App() {
   );
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
+ReactDOM.render(<App />, document.getElementById("root"));

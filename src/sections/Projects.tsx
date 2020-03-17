@@ -8,8 +8,8 @@ import {
   BulletsWrapper
 } from "../components/Common";
 
-function ProjectItem({ data }) {
-  const { projectName, bullets } = data;
+function ProjectItem(props:  { projectName: string, bullets: string[] } ) {
+  const { projectName, bullets } = props;
 
   return (
     <ContentWrapper>
@@ -30,7 +30,7 @@ export default function Projects({ projectsData }) {
     <>
       <SectionTitle title="Projects" />
       {projectsData.map(project => (
-        <ProjectItem data={project} />
+        <ProjectItem projectName={project.projectName} bullets={project.bullets} />
       ))}
     </>
   );
