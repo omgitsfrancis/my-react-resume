@@ -21,7 +21,8 @@ const Line = styled.View`
   margin-left: 4px;
 `
 
-export default function SectionTitle({title}) {
+export default function SectionTitle(props: {title: string}) {
+  const { title } = props;
   return (
     <SectionWrapper>
       <Title>{title}</Title>
