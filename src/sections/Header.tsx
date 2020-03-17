@@ -23,11 +23,14 @@ const Contact = styled.Text`
   font-weight: light;
   text-align: center;
 `;
-export default function Header(props: {
+
+export interface HeaderData {
   name: string;
   title: string;
   contacts: string[];
-}) {
+};
+
+export default function Header(props: HeaderData) {
   const { name, title, contacts } = props;
   return (
     <Wrapper>

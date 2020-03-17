@@ -1,4 +1,6 @@
-export const projectsData = [
+import { ProjectData } from "../sections/Projects";
+
+export const projectsData: ProjectData[] = [
   { 
     projectName: "Project 1",
     bullets: [
