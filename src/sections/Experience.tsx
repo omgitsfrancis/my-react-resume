@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "@react-pdf/styled-components";
 import SectionTitle from "../components/SectionTitle";
 import {
   LeftRightAnchor,
@@ -12,9 +11,8 @@ import {
   BulletsWrapper
 } from "../components/Common";
 
-function ExperienceItem({ data }) {
-  const { company, positions, bullets, location } = data;
-
+function ExperienceItem(props: {company: string, positions: {title: string, started: string, ended: string}[], bullets: string[], location: string}) {
+  const { company, positions, bullets, location } = props;
   return (
     <ContentWrapper>
       <LeftRightAnchor>
@@ -38,12 +36,14 @@ function ExperienceItem({ data }) {
   );
 }
 
-export default function Experience({ experienceData }) {
+export default function Experience(props: { experienceData: any[] }) {
+  const { experienceData } = props;
+  
   return (
     <>
       <SectionTitle title="Experience" />
       {experienceData.map(item => (
-        <ExperienceItem data={item} />
+        <ExperienceItem company={item.company} positions={item.positions} bullets={item.bullets} location={item.location} />
       ))}
     </>
   );
