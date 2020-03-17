@@ -1,4 +1,6 @@
-export const experienceData = [
+import { ExperienceData } from "../sections/Experience";
+
+export const experienceData: ExperienceData[] = [
   {
     company: "InnovaSystems International",
     location: "San Diego, CA",

@@ -11,7 +11,16 @@ import {
   BulletsWrapper
 } from "../components/Common";
 
-function EducationItem( props: {school: string, location: string, degree: string, started: string, ended: string, bullets: string[] }) {
+export interface EducationData {
+  school: string;
+  location: string;
+  degree: string;
+  started: string;
+  ended: string;
+  bullets: string[];
+}
+
+function EducationItem(props: EducationData) {
   const { school, location, degree, started, ended, bullets } = props;
 
   return (
@@ -35,13 +44,20 @@ function EducationItem( props: {school: string, location: string, degree: string
   );
 }
 
-export default function Education( props: {educationData: any[] }) {
-const { educationData } = props;
+export default function Education(props: { educationData: EducationData[] }) {
+  const { educationData } = props;
   return (
     <>
       <SectionTitle title="Education" />
       {educationData.map((edu: any) => (
-        <EducationItem school={edu.school} location={edu.location} degree={edu.degree} started={edu.started} ended={edu.ended} bullets={edu.bullets} />
+        <EducationItem
+          school={edu.school}
+          location={edu.location}
+          degree={edu.degree}
+          started={edu.started}
+          ended={edu.ended}
+          bullets={edu.bullets}
+        />
       ))}
     </>
   );

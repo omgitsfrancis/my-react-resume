@@ -8,7 +8,12 @@ import {
   BulletsWrapper
 } from "../components/Common";
 
-function ProjectItem(props:  { projectName: string, bullets: string[] } ) {
+export interface ProjectData {
+  projectName: string;
+  bullets: string[];
+}
+
+function ProjectItem(props: ProjectData) {
   const { projectName, bullets } = props;
 
   return (
@@ -22,15 +27,19 @@ function ProjectItem(props:  { projectName: string, bullets: string[] } ) {
         ))}
       </BulletsWrapper>
     </ContentWrapper>
-  )
+  );
 }
 
-export default function Projects({ projectsData }) {
+export default function Projects(props: { projectsData: ProjectData[] }) {
+  const { projectsData } = props;
   return (
     <>
       <SectionTitle title="Projects" />
       {projectsData.map(project => (
-        <ProjectItem projectName={project.projectName} bullets={project.bullets} />
+        <ProjectItem
+          projectName={project.projectName}
+          bullets={project.bullets}
+        />
       ))}
     </>
   );

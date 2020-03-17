@@ -20,7 +20,12 @@ const SkillText = styled.Text`
   font-size: 9px;
 `;
 
-function SkillItem(props: { category: string; categorySkills: string[] }) {
+export interface SkillData {
+  category: string;
+  categorySkills: string[];
+}
+
+function SkillItem(props: SkillData) {
   const { category, categorySkills } = props;
   return (
     <SectionWrapper>
@@ -31,14 +36,17 @@ function SkillItem(props: { category: string; categorySkills: string[] }) {
 }
 
 export default function Skills(props: {
-  skills: { category: string; categorySkills: string[] }[];
+  skills: SkillData[];
 }) {
   const { skills } = props;
   return (
     <>
       <SectionTitle title="Skills" />
       {skills.map(skill => (
-        <SkillItem category={skill.category} categorySkills={skill.categorySkills} />
+        <SkillItem
+          category={skill.category}
+          categorySkills={skill.categorySkills}
+        />
       ))}
     </>
   );

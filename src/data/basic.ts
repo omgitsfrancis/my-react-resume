@@ -1,4 +1,6 @@
-export const headerData = {
+import { HeaderData } from "../sections/Header";
+
+export const headerData: HeaderData = {
   name: "Francis Enriquez",
   title: "Software Engineer",
   contacts: [

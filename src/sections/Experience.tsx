@@ -11,7 +11,14 @@ import {
   BulletsWrapper
 } from "../components/Common";
 
-function ExperienceItem(props: {company: string, positions: {title: string, started: string, ended: string}[], bullets: string[], location: string}) {
+export interface ExperienceData {
+  company: string;
+  positions: { title: string; started: string; ended: string }[];
+  bullets: string[];
+  location: string;
+};
+
+function ExperienceItem(props: ExperienceData) {
   const { company, positions, bullets, location } = props;
   return (
     <ContentWrapper>
@@ -36,14 +43,19 @@ function ExperienceItem(props: {company: string, positions: {title: string, star
   );
 }
 
-export default function Experience(props: { experienceData: any[] }) {
+export default function Experience(props: { experienceData: ExperienceData[] }) {
   const { experienceData } = props;
-  
+
   return (
     <>
       <SectionTitle title="Experience" />
       {experienceData.map(item => (
-        <ExperienceItem company={item.company} positions={item.positions} bullets={item.bullets} location={item.location} />
+        <ExperienceItem
+          company={item.company}
+          positions={item.positions}
+          bullets={item.bullets}
+          location={item.location}
+        />
       ))}
     </>
   );

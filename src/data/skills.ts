@@ -1,4 +1,6 @@
-export const skillsData = [
+import { SkillData } from "../sections/Skills";
+
+export const skillsData: SkillData[] = [
   {
     category: "Programming",
     categorySkills: ["React", "JavaScript", "C#", "HTML", "CSS", "Docker", "SQL"]
