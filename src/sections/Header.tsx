@@ -18,25 +18,43 @@ const Title = styled.Text`
   line-height: 1.5;
   color: ${props => props.theme.accent};
 `;
-const Contact = styled.Text`
+const ContactWrapper = styled.View`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+`
+const Contact = styled.Link`
   font-size: 10px;
   font-weight: light;
-  text-align: center;
-`;
+  margin: 0 5rem;
+  text-decoration: dotted;
+ `;
 
 export interface HeaderData {
   name: string;
   title: string;
-  contacts: string[];
-};
+  contacts: {
+    text: string;
+    link?: string;
+  }[];
+}
 
 export default function Header(props: HeaderData) {
   const { name, title, contacts } = props;
+
   return (
     <Wrapper>
       <Name>{name}</Name>
       <Title>{title}</Title>
-      <Contact>{contacts.join("   |   ")}</Contact>
+      <ContactWrapper>
+        {contacts.map((contact, index) => (
+          <>
+          {index!==0 && <Contact>|</Contact>}
+          <Contact key={index} src={contact.link}>{contact.text}</Contact>
+          </>
+        ))}
+
+      </ContactWrapper>
     </Wrapper>
   );
 }

@@ -4,10 +4,19 @@ export const headerData: HeaderData = {
   name: "Francis Enriquez",
   title: "Software Engineer",
   contacts: [
-    "francisdenriquez@gmail.com",
-    "omgitsfrancis.netlify.com",
-    "git: omgitsfrancis"
+    {
+      text: "francisdenriquez@gmail.com",
+      link: "mailto:francisdenriquez@gmail.com"
+    },
+    {
+      text: "omgitsfrancis.netlify.com",
+      link: "https://omgitsfrancis.netlify.com"
+    },
+    {
+      text: "git: omgitsfrancis",
+      link: "https://github.com/omgitsfrancis"
+    }
   ]
-}
+};
 
 export const summary = "";
