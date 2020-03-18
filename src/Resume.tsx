@@ -57,7 +57,7 @@ export const Resume = () => (
           <Summary summary={summary} />
           <Experience experienceData={experienceData} />
           <Education educationData={educationData} />
-          {/* <Projects projectsData={projectsData} /> */}
+          <Projects projectsData={projectsData} />
           <Skills skills={skillsData} />
         </Body>
         <Stamp src="https://github.com/omgitsfrancis/my-react-resume">Resume coded in React</Stamp>
