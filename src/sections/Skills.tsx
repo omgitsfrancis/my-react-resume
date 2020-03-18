@@ -42,8 +42,9 @@ export default function Skills(props: {
   return (
     <>
       <SectionTitle title="Skills" />
-      {skills.map(skill => (
+      {skills.map((skill, index: number) => (
         <SkillItem
+          key={index}
           category={skill.category}
           categorySkills={skill.categorySkills}
         />

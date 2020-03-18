@@ -26,8 +26,8 @@ function ExperienceItem(props: ExperienceData) {
         <MainText>{company}</MainText>
         <Location>{location}</Location>
       </LeftRightAnchor>
-      {positions.map(pos => (
-        <LeftRightAnchor>
+      {positions.map((pos, index: number) => (
+        <LeftRightAnchor key={index}>
           <SubText>{pos.title.toUpperCase()}</SubText>
           <Date>
             {pos.started} - {pos.ended}
@@ -35,8 +35,8 @@ function ExperienceItem(props: ExperienceData) {
         </LeftRightAnchor>
       ))}
       <BulletsWrapper>
-        {bullets.map(bullet => (
-          <BulletText>• {bullet}</BulletText>
+        {bullets.map((bullet: string, index: number) => (
+          <BulletText key={index}>• {bullet}</BulletText>
         ))}
       </BulletsWrapper>
     </ContentWrapper>
@@ -49,8 +49,9 @@ export default function Experience(props: { experienceData: ExperienceData[] }) 
   return (
     <>
       <SectionTitle title="Experience" />
-      {experienceData.map(item => (
+      {experienceData.map((item, index: number) => (
         <ExperienceItem
+          key={index}
           company={item.company}
           positions={item.positions}
           bullets={item.bullets}

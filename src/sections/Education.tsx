@@ -36,8 +36,8 @@ function EducationItem(props: EducationData) {
         </Date>
       </LeftRightAnchor>
       <BulletsWrapper>
-        {bullets.map(bullet => (
-          <BulletText>• {bullet}</BulletText>
+        {bullets.map((bullet: string, index: number) => (
+          <BulletText key={index}>• {bullet}</BulletText>
         ))}
       </BulletsWrapper>
     </ContentWrapper>
@@ -49,8 +49,9 @@ export default function Education(props: { educationData: EducationData[] }) {
   return (
     <>
       <SectionTitle title="Education" />
-      {educationData.map((edu: any) => (
+      {educationData.map((edu: any, index: number) => (
         <EducationItem
+          key={index}
           school={edu.school}
           location={edu.location}
           degree={edu.degree}

@@ -22,8 +22,8 @@ function ProjectItem(props: ProjectData) {
         <MainText>{projectName}</MainText>
       </LeftRightAnchor>
       <BulletsWrapper>
-        {bullets.map(bullet => (
-          <BulletText>• {bullet}</BulletText>
+        {bullets.map((bullet: string, index: number) => (
+          <BulletText key={index}>• {bullet}</BulletText>
         ))}
       </BulletsWrapper>
     </ContentWrapper>
@@ -35,8 +35,9 @@ export default function Projects(props: { projectsData: ProjectData[] }) {
   return (
     <>
       <SectionTitle title="Projects" />
-      {projectsData.map(project => (
+      {projectsData.map((project, index:number) => (
         <ProjectItem
+          key={index}
           projectName={project.projectName}
           bullets={project.bullets}
         />
