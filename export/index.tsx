@@ -14,4 +14,3 @@ while (fs.existsSync(path)) {
 } 
 
 ReactPDF.render(<Resume />, path);
-

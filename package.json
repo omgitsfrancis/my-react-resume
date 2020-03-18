@@ -26,7 +26,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "export": "npx babel-node export/index.js"
+    "export": "npx babel-node --extensions '.js,.ts,.tsx' export/index.tsx"
   },
   "eslintConfig": {
     "extends": "react-app"
