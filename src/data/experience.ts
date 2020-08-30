@@ -17,10 +17,12 @@ export const experienceData: ExperienceData[] = [
       }
     ],
     bullets: [
-      "Developed and maintained projects using React, C#, .NET, and SQL Server.",
-      "Contributed to the company's design system by creating styled React components.",
-      "Worked in an agile environment, specifically Scrum.",
-      "Built automated end to end tests from the ground up with Selenium (C#) and TestCafe."
+      "Developed and maintained web applications written in React, .NET, and SQL Server.",
+      "Created reusable React components on the design system team.",
+      "Migrated legacy project written in Durandal/KnockoutJS to React.",
+      "Created NodeJS proxy server with client cert support enabling the use of any automated test framework.",
+      "Developed automated tests in C# (Selenium) and JavaScript (TestCafe).",
+      "Managed and maintained test case library, test plans, and test documentation."
     ]
   },
   {
@@ -34,7 +36,7 @@ export const experienceData: ExperienceData[] = [
       }
     ],
     bullets: [
-      "Delivered monthly security patching scripts for isolated systems at various Marine and Naval sites.",
+      "Developed monthly security patching scripts for isolated systems.",
       "Automated the creation of security patching scripts with Python.",
       "Utilized security assessment tools such as Nessus, Security Content Automation Protocol (SCAP), and Security Technical Implementation Guides (STIGs) to perform vulnerability testing.",
       "Conducted Application Integration and Software Integration Testing (AI SIT) on various government networks (CANES, RDTE, SWAN).",
@@ -51,7 +53,7 @@ export const experienceData: ExperienceData[] = [
       }
     ],
     bullets: [
-      "Developed automated functional tests on Naval Ship systems (CANES).",
+      "Developed automated functional tests for Naval Ship networks (CANES).",
       "Created tutorial documentation to provide training on the creation and execution of automated test.",
       "Managed all test assets by creating baseline images, backups, and documentation.",
       "Wrote daily testing reports to update installation technicians of system discrepancies."
@@ -74,7 +76,7 @@ export const experienceData: ExperienceData[] = [
     ],
     bullets: [
       "Support and troubleshoot technological issues of a company with over 500 employees.",
-      "Experience with Enterprise Microsoft technologies such as Active Directory, SCCM, IIS, and Exchange.",
+      "Utilized Microsoft enterprise technologies such as Active Directory, SCCM, IIS, and Exchange.",
       "Issued laptops, desktops, VoIP phones, and smart cards to new hires.",
       "Projects: Classroom in a box, Facility Maintenance Ticket Server, and HTTPS file server for customer downloads."
     ]
