@@ -9,12 +9,12 @@ export const headerData: HeaderData = {
       link: "mailto:francisdenriquez@gmail.com"
     },
     {
-      text: "omgitsfrancis.netlify.com",
-      link: "https://omgitsfrancis.netlify.com"
+      text: "GitHub: omgitsfrancis",
+      link: "https://github.com/omgitsfrancis"
     },
     {
-      text: "git: omgitsfrancis",
-      link: "https://github.com/omgitsfrancis"
+      text: "omgitsfrancis.netlify.com",
+      link: "https://omgitsfrancis.netlify.com"
     }
   ]
 };
