@@ -4,11 +4,14 @@ export const FlexRow = styled.View`
   display: flex;
   flex-direction: row;
 `;
+
 export const LeftRightAnchor = styled(FlexRow)`
   justify-content: space-between;
 `;
+
 export const StyledLink = styled.Link`
-  color: green;
+  font-size: 10px;
+  color: ${props => props.theme.accent};
 `;  
 
 export const ContentWrapper = styled.View`
