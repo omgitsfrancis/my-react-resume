@@ -2,19 +2,31 @@ import { ProjectData } from "../sections/Projects";
 
 export const projectsData: ProjectData[] = [
   {
-    projectName: "Web Scraper",
+    projectName: "React Resume",
+    gitLink: "https://github.com/omgitsfrancis/my-react-resume",
+    demoLink: "https://francis-enriquez-resume.netlify.app/",
     bullets: [
-      "Given a URL and CSS Selector, this application will scrape a web page and return text data that matches the CSS Selector.",
-      "Client is hosted on Netlify and public API is hosted on Heroku.",
-      "Created with TypeScript, React, and Node."
+      "This resume that you're reading was created using React and TypeScript.",
+      "It can be deployed as a static website or be exported into a PDF for distribution.",
     ],
   },
   {
-    projectName: "Lululemon Stock Checker",
+    projectName: "Apple Store Stock Checker",
+    gitLink: "https://github.com/omgitsfrancis/apple-stock-checker",
     bullets: [
-      "Created an Express server that would email me when a specific Lululemon product was available online.",
-      "Used axios for requests, cheerio for parsing HTML, and nodemailer to send emails.",
-      "Deployed the server to the cloud using Azure App Service.",
+      "Created an Azure Functions app that would notify me when a specific Apple product was available online.",
+      "Notifications are sent via SMS to specified phone numbers when product is available using Twilio.",
+      "Created with Node.",
+    ],
+  },
+  {
+    projectName: "Web Scraper",
+    gitLink: "https://github.com/omgitsfrancis/web-scraper",
+    demoLink: "https://web-scraper.netlify.app/",
+    bullets: [
+      "Given a URL and CSS Selector, this app will scrape a web page for text or data from a desired HTML attribute.",
+      "Client is hosted on Netlify and public API is hosted on Heroku.",
+      "Created with TypeScript, React, and Node.",
     ],
   },
 ];

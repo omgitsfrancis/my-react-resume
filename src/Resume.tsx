@@ -3,7 +3,7 @@ import { Document, Font } from "@react-pdf/renderer";
 import styled, { ThemeProvider } from "@react-pdf/styled-components";
 
 // Components
-import { StyledLink } from "./components/Common";
+// import { StyledLink } from "./components/Common";
 
 // Resume data
 import { headerData, summary } from "./data/basic";
@@ -31,7 +31,7 @@ const StyledPage = styled.Page`
   display: "flex";
   flex-direction: "col";
   font-family: "Montserrat";
-  margin: 24px 0;
+  margin: 16px 0;
   color: ${props => props.theme.text};
 `;
 
@@ -39,14 +39,14 @@ const Body = styled.View`
   margin: 0 60px;
 `;
 
-const Stamp = styled(StyledLink)`
-  position: relative;
-  bottom: -20px;
-  font-size: 8px;
-  text-align: center;
-  margin: 0 10px;
-  color: ${props => props.theme.accent};
-`;
+// const Stamp = styled(StyledLink)`
+//   position: relative;
+//   bottom: -20px;
+//   font-size: 8px;
+//   text-align: center;
+//   margin: 0 10px;
+//   color: ${props => props.theme.accent};
+// `;
 
 export const Resume = () => (
   <ThemeProvider theme={theme}>
@@ -55,12 +55,12 @@ export const Resume = () => (
         <Header name={headerData.name} title={headerData.title} contacts={headerData.contacts} />
         <Body>
           <Summary summary={summary} />
-          <Experience experienceData={experienceData} />
-          <Education educationData={educationData} />
-          <Projects projectsData={projectsData} />
           <Skills skills={skillsData} />
+          <Experience experienceData={experienceData} />
+          <Projects projectsData={projectsData} />
+          <Education educationData={educationData} />
         </Body>
-        <Stamp src="https://github.com/omgitsfrancis/my-react-resume">Resume coded in React</Stamp>
+        {/* <Stamp src="https://github.com/omgitsfrancis/my-react-resume">Resume coded in React</Stamp> */}
       </StyledPage>
     </Document>
   </ThemeProvider>

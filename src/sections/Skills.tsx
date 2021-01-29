@@ -12,7 +12,7 @@ const SectionWrapper = styled.View`
 const Category = styled.Text`
   font-size: 12px;
   font-weight: bold;
-  width: 120px;
+  width: 90px;
 `;
 
 const SkillText = styled.Text`
