@@ -7,9 +7,6 @@ export const educationData: EducationData[] = [
     degree: "BS in Computer Engineering",
     started: "2011",
     ended: "2016",
-    bullets: [
-      "Graduating GPA: 3.02",
-      "Webmaster of Alpha Phi Omega"
-    ]
-  }
+    bullets: ["Webmaster of Alpha Phi Omega"],
+  },
 ];
