@@ -10,6 +10,8 @@ import {
 
 export interface ProjectData {
   projectName: string;
+  gitLink?: string,
+  demoLink?: string,
   bullets: string[];
 }
 

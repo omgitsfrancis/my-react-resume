@@ -4,7 +4,8 @@ import styled from '@react-pdf/styled-components';
 const SectionWrapper = styled.View`
   display:flex;
   flex-direction: row;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
+  margin-top: 2px;
 `
 const Title = styled.Text`
   font-size: 18px;

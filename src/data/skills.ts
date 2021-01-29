@@ -2,11 +2,20 @@ import { SkillData } from "../sections/Skills";
 
 export const skillsData: SkillData[] = [
   {
-    category: "Programming",
-    categorySkills: ["React", "JavaScript", "C#", "HTML", "CSS", "Docker", "SQL", "Node"]
+    category: "Frameworks",
+    categorySkills: [
+      "Node",
+      "React",
+      "TypeScript",
+      ".NET Core/Framework",
+      "Docker",
+      "Git",
+      "Selenium",
+      "TestCafe",
+    ],
   },
   {
-    category: "Software",
-    categorySkills: ["Visual Studio", "SSMS", "Git", "Azure DevOps", "Postman"]
-  }
-]
+    category: "Languages",
+    categorySkills: ["JavaScript", "HTML", "CSS", "C#", "SQL"],
+  },
+];
