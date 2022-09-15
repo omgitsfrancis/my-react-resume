@@ -37,7 +37,7 @@ function EducationItem(props: EducationData) {
       </LeftRightAnchor>
       <BulletsWrapper>
         {bullets.map((bullet: string, index: number) => (
-          <BulletText key={index}>• {bullet}</BulletText>
+          <BulletText key={index}>•  {bullet}</BulletText>
         ))}
       </BulletsWrapper>
     </ContentWrapper>

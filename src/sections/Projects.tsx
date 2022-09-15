@@ -39,7 +39,7 @@ function ProjectItem(props: ProjectData) {
       </FlexRow>
       <BulletsWrapper>
         {bullets.map((bullet: string, index: number) => (
-          <BulletText key={index}>• {bullet}</BulletText>
+          <BulletText key={index}>•  {bullet}</BulletText>
         ))}
       </BulletsWrapper>
     </ContentWrapper>

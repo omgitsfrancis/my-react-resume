@@ -2,13 +2,35 @@ import { ExperienceData } from "../sections/Experience";
 
 export const experienceData: ExperienceData[] = [
   {
+    company: "Viasat",
+    location: "Carlsbad, CA",
+    positions: [
+      {
+        title: "Full Stack Software Engineer",
+        started: "Jul 2021",
+        ended: "Present",
+      },
+    ],
+    bullets: [
+      "Acted as the frontend subject matter expert for the team.",
+      "Facilitator for the frontend Community of Practice meetings discussing frontend topics within our domain.",
+      "Led the switch from using Selenium to Playwright for E2E tests.",
+      "Created and maintained react component library that was used within our domain.",
+      "Developed API endpoints and made updates to Snowflake database using Sqitch.",
+      "Maintained flight detection algorithm used for tracking and consolidating customer aircraft data.",
+      "Participated in an on-call rotation to support production using the follow the sun model.",
+      "Created data integrity checks using AWS Lambda to monitor our data for any abnormalities.",
+      "Configured Snowflake dashboards to assist in investigation of data integrity issues."
+    ],
+  },
+  {
     company: "InnovaSystems International",
     location: "San Diego, CA",
     positions: [
       {
         title: "Software Engineer",
         started: "Dec 2019",
-        ended: "Present",
+        ended: "Jul 2021",
       },
       {
         title: "Software QA Engineer",
@@ -23,60 +45,6 @@ export const experienceData: ExperienceData[] = [
       "Created NodeJS proxy server with client cert support enabling the use of any automated test framework.",
       "Developed automated UI tests in C# (Selenium) and JavaScript (TestCafe).",
       "Mentor other testers and devs on automated UI testing.",
-    ],
-  },
-  {
-    company: "Forward Slope Inc.",
-    location: "San Diego, CA",
-    positions: [
-      {
-        title: "Junior Software Engineer",
-        started: "Aug 2017",
-        ended: "Nov 2018",
-      },
-    ],
-    bullets: [
-      "Developed monthly security patching scripts for isolated systems.",
-      "Automated the creation of security patching scripts with Python.",
-      "Utilized security assessment tools such as Nessus, Security Content Automation Protocol (SCAP), and Security Technical Implementation Guides (STIGs) to perform vulnerability testing.",
-    ],
-  },
-  {
-    company: "Koam Engineer Systems - KES inc",
-    location: "San Diego, CA",
-    positions: [
-      {
-        title: "Computer Systems Engineer",
-        started: "Oct 2016",
-        ended: "Aug 2017",
-      },
-    ],
-    bullets: [
-      "Developed automated functional tests for Naval Ship networks (CANES).",
-      "Created tutorial documentation to provide training on the creation and execution of automated test.",
-      "Managed all test assets by creating baseline images, backups, and documentation.",
-      "Wrote daily testing reports to update installation technicians of system discrepancies.",
-    ],
-  },
-  {
-    company: "Tapestry Solutions, a Boeing Company",
-    location: "San Diego, CA",
-    positions: [
-      {
-        title: "IT Technician",
-        started: "Mar 2016",
-        ended: "Oct 2016",
-      },
-      {
-        title: "System Administrator Intern",
-        started: "Jul 2015",
-        ended: "Mar 2016",
-      },
-    ],
-    bullets: [
-      "Support and troubleshoot technological issues of a company with over 500 employees.",
-      "Issued laptops, desktop computers, VoIP phones, and smart cards to new hires.",
-      "Utilized Microsoft enterprise technologies such as Active Directory, SCCM, IIS, and Exchange.",
     ],
   },
 ];
