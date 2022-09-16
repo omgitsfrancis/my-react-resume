@@ -13,7 +13,7 @@ export const headerData: HeaderData = {
       link: "https://github.com/omgitsfrancis"
     },
     {
-      text: "omgitsfrancis.netlify.com",
+      text: "Website: omgitsfrancis.netlify.com",
       link: "https://omgitsfrancis.netlify.com"
     }
   ]

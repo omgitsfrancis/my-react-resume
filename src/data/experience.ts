@@ -15,12 +15,13 @@ export const experienceData: ExperienceData[] = [
       "Acted as the frontend subject matter expert for the team.",
       "Facilitator for the frontend Community of Practice meetings discussing frontend topics within our domain.",
       "Led the switch from using Selenium to Playwright for E2E tests.",
-      "Created and maintained react component library that was used within our domain.",
-      "Developed API endpoints and made updates to Snowflake database using Sqitch.",
-      "Maintained flight detection algorithm used for tracking and consolidating customer aircraft data.",
-      "Participated in an on-call rotation to support production using the follow the sun model.",
-      "Created data integrity checks using AWS Lambda to monitor our data for any abnormalities.",
-      "Configured Snowflake dashboards to assist in investigation of data integrity issues."
+      "Contributed and maintained react component library that was used within our domain.",
+      "Created RESTful API endpoints in Node/Express.",
+      "Maintained flight detection ELT used for tracking and consolidating customer aircraft data.",
+      "Developed and deployed database updates to Snowflake using Sqitch",
+      "Developed data integrity checks using AWS Lambda to monitor our data for any abnormalities.",
+      "Configured Snowflake dashboards to assist in investigation of data integrity issues.",
+      "Participated in an on-call rotation to support production using the follow the sun model."
     ],
   },
   {
