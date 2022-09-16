@@ -31,7 +31,7 @@ export const Location = styled.Text`
 
 export const SubText = styled.Text`
   font-size: 10px;
-  margin-bottom: 2px;
+  margin-bottom: 2.5px;
 `;
 
 export const Date = styled.Text`
@@ -39,10 +39,12 @@ export const Date = styled.Text`
   font-size: 10px;
 `;
 
-export const BulletsWrapper = styled.View``;
+export const BulletsWrapper = styled.View`
+  margin-left: 1px;
+`;
 
 export const BulletText = styled.Text`
   font-weight: light;
   font-size: 9px;
-  margin-bottom: 2px;
+  margin-bottom: 2.5px;
 `;
