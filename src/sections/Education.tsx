@@ -8,15 +8,15 @@ import {
   SubText,
   Date,
   BulletText,
-  BulletsWrapper
+  BulletsWrapper,
 } from "../components/Common";
 
 export interface EducationData {
   school: string;
   location: string;
   degree: string;
-  started: string;
-  ended: string;
+  started?: string;
+  ended?: string;
   bullets: string[];
 }
 
@@ -32,12 +32,12 @@ function EducationItem(props: EducationData) {
       <LeftRightAnchor>
         <SubText>{degree}</SubText>
         <Date>
-          {started} - {ended}
+          {started && ended ? `${started} - ${ended}` : ""}
         </Date>
       </LeftRightAnchor>
       <BulletsWrapper>
         {bullets.map((bullet: string, index: number) => (
-          <BulletText key={index}>•  {bullet}</BulletText>
+          <BulletText key={index}>• {bullet}</BulletText>
         ))}
       </BulletsWrapper>
     </ContentWrapper>
