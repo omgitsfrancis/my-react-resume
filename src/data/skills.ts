@@ -5,12 +5,12 @@ export const skillsData: SkillData[] = [
     category: "Frontend",
     categorySkills: [
       "React",
-      "HTML",
-      "CSS",
-      "React Testing Library",
       "Storybook",
-      "rollup.js",
       "Material UI",
+      "Styled/Emotion",
+      "Highcharts",
+      "Google Maps API",
+      "rollup.js"
     ],
   },
   {
@@ -19,14 +19,14 @@ export const skillsData: SkillData[] = [
   },
   {
     category: "Database",
-    categorySkills: ["Snowflake", "MS SQL Server"],
+    categorySkills: ["SQL", "Snowflake", "Sqitch", "MS SQL Server"],
   },
   {
     category: "Testing",
-    categorySkills: ["Playwright", "Selenium", "TestCafe"],
+    categorySkills: ["Playwright", "Selenium", "Jest", "Postman", "TestCafe"],
   },
   {
-    category: "Frameworks",
-    categorySkills: ["Docker", "Git", "Jenkins"],
+    category: "DevOps",
+    categorySkills: ["Docker", "Git", "Jenkins", "AWS"],
   },
 ];
